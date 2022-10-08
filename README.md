@@ -19,5 +19,5 @@ npm run dev
 
 http://localhost:7000/public/html/about.html
 ### 注意
-1. 请更改配置文件的端口号
-2. 清更改配置文件中MySQL数据库的端口号
+1. 请更改配置文件的端口号，位置`config/config.default.js`
+2. 清更改配置文件中MySQL数据库的端口号，位置`config/config.default.js`
