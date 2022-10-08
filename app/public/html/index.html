@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大学生社团管理系统</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="content">
+            <div class="title">大学生社团管理系统</div>
+            <div class="user">
+                <div class="userImg"></div>
+                <div class="userName">UserName</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="left">
+            <li class="role1"><i class="bi bi-calendar2-date-fill"></i><span>加入活动</span></li>
+            <li class="role3"><i class="bi bi-calendar2-date-fill"></i><span>管理社团</span></li>
+            <li class="role1"><i class="bi bi-bookmark-check-fill"></i><span>加入社团</span></li>
+            <li class="role3"><i class="bi bi-bookmark-check-fill"></i><span>管理活动</span></li>
+            <li class="role1"><i class="bi bi-book-fill"></i><span>我的活动</span></li>
+            <li class="role3"><i class="bi bi-book-fill"></i><span>活动审核</span></li>
+            <li class="role1"><i class="bi bi-droplet-fill"></i><span>我的社团</span></li>
+            <li class="role2"><i class="bi bi-chat-right-text-fill"></i><span>申请活动</span></li>
+            <li class="role3"><i class="bi bi-wrench-adjustable"></i><span>管理用户</span></li>
+            <li class="role2"><i class="bi bi-pencil-fill"></i><span>我的活动</span></li>
+            <!-- <li><i class="bi bi-send-fill"></i><span>小飞机</span></li> -->
+        </ul>
+        <div class="right">
+            <!--=============================================== 管理员 ===============================================-->
+            <!-- 管理社团0 -->
+            <div class="manageCommunity">
+                <h2 class="title"><span>社团信息表</span><button class="addCommunitybtn">添加</button></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>社团名称</th>
+                            <th>社团标语</th>
+                            <th>负责人姓名</th>
+                            <th>负责人电话</th>
+                            <th>负责人班级</th>
+                            <th>负责人QQ</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 添加社团1 -->
+            <div class="addCommunity">
+                <div class="box">
+                    <input type="text" id="addname" placeholder="社团名称">
+                    <input type="text" id="addintroduce" placeholder="社团标语">
+                    <input type="text" id="addpeople" placeholder="负责人姓名">
+                    <input type="text" id="addtel" placeholder="负责人电话">
+                    <input type="text" id="addclass" placeholder="负责人班级">
+                    <input type="text" id="addqq" placeholder="负责人QQ">
+                    <button class="addcencal">取消</button>
+                    <button class="addright">确定</button>
+                </div>
+            </div>
+            <!-- 显示社团成员2 -->
+            <div class="showComPeo">
+                <h2 class="title"><span>成员信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>账号</th>
+                            <th>姓名</th>
+                            <th>班级</th>
+                            <th>电话</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 管理用户3 -->
+            <div class="managedUsers">
+                <h2 class="title"><span>用户信息表</span></h2>
+                <h2 class="title">
+                    <input type="text" class="searchUser" placeholder="请输入姓名"><button class="searchUserBtn">搜索</button>
+                </h2>
+                <div class=" tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>账号</th>
+                            <th>密码</th>
+                            <th>姓名</th>
+                            <th>电话</th>
+                            <th>班级</th>
+                            <th>所属社团</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 管理活动4 -->
+            <div class="managementActivities">
+                <h2 class="title"><span>活动信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>活动名称</th>
+                            <th>主办单位</th>
+                            <th>承担单位</th>
+                            <th>管理员姓名</th>
+                            <th>管理员电话</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                            <th>活动经费</th>
+                            <th>审批状态</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 活动审核5 -->
+            <div class="activityReview">
+                <h2 class="title"><span>待审核活动信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>活动名称</th>
+                            <th>主办单位</th>
+                            <th>承担单位</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                            <th>活动经费</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--=============================================== 用户 ===============================================-->
+            <!-- 显示活动6 -->
+            <div class="displayAct">
+                <h2 class="title"><span>待加入活动信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>活动名称</th>
+                            <th>主办单位</th>
+                            <th>承担单位</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 显示社团7 -->
+            <div class="displayComs">
+                <h2 class="title"><span>社团信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>社团名称</th>
+                            <th>社团标语</th>
+                            <th>负责人姓名</th>
+                            <th>负责人电话</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 我的活动8 -->
+            <div class="myActive">
+                <h2 class="title"><span>我加入的活动</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>活动名称</th>
+                            <th>主办单位</th>
+                            <th>承担单位</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 我的社团9 -->
+            <div class="myCommunity">
+                <h2 class="title"><span>社团信息表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>社团名称</th>
+                            <th>社团标语</th>
+                            <th>负责人姓名</th>
+                            <th>负责人电话</th>
+                            <th>操作</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 申请活动10 -->
+            <div class="applicationActivity">
+                <h2 class="title"><span>申请活动</span></h2>
+                <div class="applicationActivityBox">
+                    <input type="text" id="eventName" placeholder="活动名称">
+                    <input type="text" id="organizer" placeholder="主办单位">
+                    <input type="text" id="organizered" placeholder="承办单位">
+                    <input type="datetime-local" id="activityTime" placeholder="活动时间">
+                    <input type="text" id="eventLocation" placeholder="活动地点">
+                    <input type="text" id="eventExpense" placeholder="活动经费">
+                    <button class="cancelApplication">取消申请</button>
+                    <button class="submitApplication">提交申请</button>
+                </div>
+            </div>
+            <!-- 申请的活动11 -->
+            <div class="applicationActivity1">
+                <h2 class="title"><span>我的活动表</span></h2>
+                <div class="tablebox">
+                    <table cellspacing="0" cellpadding="0">
+                        <thead>
+                            <th>编号</th>
+                            <th>活动名称</th>
+                            <th>主办单位</th>
+                            <th>承担单位</th>
+                            <th>活动时间</th>
+                            <th>活动地点</th>
+                            <th>审批状态</th>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+<script src="../js/index.js"></script>
+
+</html>

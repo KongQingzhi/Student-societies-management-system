@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #1c83f6;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1700px;
+  min-height: 900px;
+  background-color: #ebebff;
+}
+
+body nav {
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 221, 221, 0.721);
+}
+
+body nav .content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1650px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+body nav .content .title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 300px;
+  line-height: 70px;
+  color: #004aca;
+  letter-spacing: 5px;
+}
+
+body nav .content .user {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+}
+
+body nav .content .user .userImg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url("../img/userImg.png") no-repeat;
+  background-size: cover;
+}
+
+body nav .content .user .userName {
+  position: absolute;
+  left: 70px;
+  top: 0;
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body .container {
+  width: 1650px;
+  height: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+body .container .left {
+  width: 70px;
+  height: 400px;
+  transition: all 0.5s;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+body .container .left:hover {
+  width: 200px;
+}
+
+body .container .left li {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 116, 245, 0.89);
+  border-radius: 70px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+body .container .left li:hover {
+  transform: translateX(20px);
+}
+
+body .container .left li:hover span {
+  color: #fff;
+}
+
+body .container .left li:active {
+  transform: translate(20px, 2px);
+}
+
+body .container .left li i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+body .container .left li span {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  transition: all 0.3s;
+}
+
+body .container .right {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 100%;
+  padding: 50px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.manageCommunity,
+.addCommunity,
+.showComPeo,
+.managedUsers,
+.reviewProject,
+.managementActivities,
+.activityReview,
+.displayAct,
+.displayComs,
+.myCommunity,
+.myActive,
+.applicationActivity {
+  width: 1298px;
+  height: 100%;
+  display: none;
+}
+
+.title {
+  text-align: center;
+  height: 40px;
+}
+
+.title span {
+  letter-spacing: 10px;
+  margin: 0 50px;
+}
+
+.tablebox {
+  width: 1298px;
+  height: 670px;
+  overflow-y: scroll;
+}
+
+table {
+  width: 1277px;
+  margin: 10px 0;
+}
+
+body .container .right th,
+body .container .right td {
+  height: 40px;
+  text-align: center;
+}
+
+thead {
+  border-bottom: 2px solid #333;
+}
+
+th {
+  background-color: rgb(28, 131, 246);
+  color: rgb(255, 255, 255);
+
+}
+
+tr {
+  border-bottom: 2px solid #333;
+}
+
+tr:nth-child(even) {
+  background-color: #004aca28;
+}
+
+tbody tr:hover {
+  background-color: #00ca9b28;
+}
+
+td {
+  max-width: 150px;
+
+}
+
+td a {
+  line-height: 20px;
+  color: #1100ff;
+}
+
+.addCommunity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 810px;
+  background-color: #688fd3;
+}
+
+.addCommunity .box {
+  width: 400px;
+  height: 500px;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 100px auto;
+}
+
+.addCommunity .box input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+
+
+.addCommunity .box button {
+  margin: 0 23px;
+}
+
+.searchUser {
+  width: 300px;
+  height: 40px;
+  margin: 0 20px;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.applicationActivityBox {
+  width: 500px;
+  height: 600px;
+  padding: 70px 50px;
+  margin: 50px auto;
+  border: 3px solid #1c83f6;
+  border-radius: 20px;
+}
+
+.applicationActivityBox input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #999;
+}
+
+.applicationActivityBox button {
+  margin: 50px 37px;
+}

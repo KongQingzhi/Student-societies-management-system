@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+
+<body>
+    <section class="user">
+        <div class="user_options-container">
+            <div class="user_options-text">
+                <div class="user_options-unregistered">
+                    <h2 class="user_unregistered-title">没有帐户？</h2>
+                    <p class="user_unregistered-text">快来加入我们，感受多彩的大学生活吧！</p>
+                    <button class="user_unregistered-signup" id="tosignup-button">去注册</button>
+                </div>
+
+                <div class="user_options-registered">
+                    <h2 class="user_registered-title">已有帐户？</h2>
+                    <p class="user_registered-text">立刻登录账号，享受我的多彩大学生活！</p>
+                    <button class="user_registered-login" id="tologin-button">去登录</button>
+                </div>
+            </div>
+
+            <div class="user_options-forms" id="user_options-forms">
+                <div class="user_forms-login">
+                    <h1>大学生社团管理系统</h1>
+                    <h2 class="forms_title">登录</h2>
+                    <div class="forms_form" id="login">
+                        <fieldset class="forms_fieldset" style="border: none;">
+                            <div class="forms_field">
+                                <input type="email" placeholder="邮箱" id="login-email" class="forms_field-input" required
+                                    autofocus />
+                            </div>
+                            <div class="forms_field">
+                                <input type="password" placeholder="密码" id="login-pwd" class="forms_field-input"
+                                    required />
+                            </div>
+                        </fieldset>
+                        <span id="hint" style="visibility: hidden;">账号或密码错误！</span>
+                        <div class="forms_buttons">
+                            <button type="button" class="forms_buttons-forgot"><input type="checkbox" id="login-admin"
+                                    style="vertical-align: middle;"><span>我是管理员</span></button>
+                            <input type="submit" value="登录" class="forms_buttons-action" id="login-button">
+                        </div>
+                    </div>
+                </div>
+                <div class="user_forms-signup">
+                    <h1>大学生社团管理系统</h1>
+                    <h2 class="forms_title">注册</h2>
+                    <div class="forms_form" id="register">
+                        <fieldset class="forms_fieldset" style="border: none;">
+                            <div class="forms_field">
+                                <input type="text" placeholder="姓名" id="register-name" class="forms_field-input"
+                                    required />
+                            </div>
+                            <div class="forms_field">
+                                <input type="email" placeholder="邮箱" id="register-email" class="forms_field-input"
+                                    required />
+                            </div>
+                            <div class="forms_field">
+                                <input type="password" placeholder="密码" id="register-pwd" class="forms_field-input"
+                                    required />
+                            </div>
+                            <div class="forms_field">
+                                <input type="tel" placeholder="电话" id="register-tel" class="forms_field-input"
+                                    required />
+                            </div>
+                            <div class="forms_field">
+                                <input type="text" placeholder="班级" id="register-cla" class="forms_field-input"
+                                    required />
+                            </div>
+                        </fieldset>
+                        <span id="hint1" style="visibility: hidden;">账号存在，注册失败</span>
+                        <div class="forms_buttons">
+                            <input type="submit" value="注册" class="forms_buttons-action" id="register-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+<script src="../js/login.js"></script>
+
+</html>
