@@ -16,6 +16,7 @@ npm i
 npm run dev
 ```
 5. 通过浏览器访问项目
+
 http://localhost:7000/public/html/about.html
 ### 注意
 1. 请更改配置文件的端口号
