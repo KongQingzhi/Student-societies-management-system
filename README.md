@@ -53,7 +53,7 @@ Node.js + MySQL + Axios.js + Egg.js + jQuery
 
 3. 在配置文件中配置数据库参数
 找到config文件夹下的config.default.js文件
-```JSON
+```
 //数据库mysql配置
 exports.mysql = {
     client: {
