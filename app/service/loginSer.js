@@ -6,7 +6,7 @@ class LoginSer extends Service {
     async login(num, pwd, surface) {
         try {
             //sql语句
-            const sql = `select * from ${surface} where num=${num} and pwd=${pwd}`;
+            const sql = `select * from ${surface} where num='${num}' and pwd='${pwd}'`;
             // 访问数据库
             const res = await this.ctx.app.mysql.query(sql);
             //将数据返回给控制器
